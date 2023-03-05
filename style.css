@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poopings", sans-serif;
+}
+
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
+}
+
+header .brand {
+  color: black;
+  font-size: 1.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.bt {
+  display: inline-block;
+  margin-top: 1rem;
+  background: white;
+  color: black;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  border: 0.1rem solid white;
+  cursor: pointer;
+
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.bt:hover {
+  background-color: rgb(12, 12, 12);
+  color: rgb(250, 249, 249);
+  text-decoration: unset;
+  transition: 0.8s ease;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+}
+.home:before {
+  z-index: 777;
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.home .content {
+  z-index: 888;
+  color: black;
+  width: 70%;
+  margin-top: 50px;
+}
+.home .content h1 {
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin: 90px 50px 20px 0;
+}
+.home .content h1 span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.home img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  padding: 3rem 10%;
+}
